@@ -1,3 +1,3 @@
 # Donald-Work
 
-Scripts for calculating the concentrations of Aqeous Iron within dissolved mineral solutions
+Scripts for calculating the concentrations of Aqueous Iron within dissolved mineral solutions.
