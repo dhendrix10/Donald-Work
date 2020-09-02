@@ -197,4 +197,15 @@ def tmp_cal(path,peaks,cal_plot=False,std_plot=False):
 
 
     return cal_params, pk_pm
+
+def calc_concentrations(pk_params,cal_params):
+    
+    concentrations = {}
+    
+    for key, val in pk_params.items():
+        y = val['Avg_Int']
+        concentration = (y - cal_params['b']) / cal_params['m']
+        concentrations[key] = concentration
+    
+    return concentrations
     
